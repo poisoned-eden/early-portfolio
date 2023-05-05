@@ -1,0 +1,16 @@
+article {
+    /* set to Bar style goes full width */
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+address img {
+    width: 100px;
+}

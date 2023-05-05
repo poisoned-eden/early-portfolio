@@ -103,5 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# challenge readme file with task info
+# challenge readme and gif with task info
 challenge README.md
+02-advanced-css-homework-demo.gif
