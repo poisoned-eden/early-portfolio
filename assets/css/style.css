@@ -1,5 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: darkcyan;
+}
+
 article {
     /* set to Bar style goes full width */
+
 }
 
 .box {
