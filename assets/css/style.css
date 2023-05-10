@@ -1,16 +1,134 @@
-article {
-    /* set to Bar style goes full width */
+body {
+    font-family: 'Roboto', sans-serif;
+    --main-colour: rgb(41, 189, 193);
+    --main-translucent: rgba(41, 189, 193, 0.7);
+    --font-colour: black;
 }
 
-.box {
-    display: flex;
-    flex-flow: row wrap;
+header {
+    background-color: var(--main-colour);
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+h1, #subtitle {
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1 0 120px;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+nav li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--font-colour);
+    font-size: x-large;
+}
+
+article {
+    width: 100%;
+}
+
+article h2 {
+    text-align: left;
+    padding-left: 20px;
 }
 
 img {
     max-width: 100%;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
 }
 
-address img {
+article p {
+    padding: 0px 20px;
+}
+
+figure {
+    position: relative;
+    margin: 10px;
+    border-color: var(--main-colour);
+    border-width: 5px 5px 0px 5px;
+    border-style: solid;
+    background-color: var(--main-colour);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    background-color: var(--main-translucent);
+    padding: 15px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+article a {
+    color: var(--font-colour);
+}
+
+address {
+    padding: 20px;
+}
+
+address div {
+    width: 100%;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+address div img {
+    height: 100px;
     width: 100px;
+}
+
+address div a {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    font-size: large;
+}
+
+#btn {
+    text-align: center;
+}
+
+button {
+    background-color: var(--main-colour);
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 20px;
+    font-weight: bold;
+    border-width: 0;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }

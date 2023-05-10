@@ -7,14 +7,14 @@
         <meta name="description" content="Lilith Miller-Fermor's Portfolio">
         <link rel="stylesheet" href="./assets/css/normalize.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div>
-                <h2>This is Work In Progress</h2>
-            </div>
             <h1>Lilith Miller-Fermor</h1>
-            <p class="subtitle">poisoned-eden</p>
+            <p id="subtitle" role="doc-subtitle">poisoned-eden</p>
             <nav>
                 <ul>
                     <li>
@@ -31,39 +31,94 @@
                     </li>
                 </ul>
             </nav>
-            <img src="assets/images/Lilith-profile-pic.jpg">
         </header>
         <main>
             <article>
-                <h2 id="#about-me">About Me</h2>
+                <h2 id="about-me">About Me</h2>
+                <img src="assets/images/Lilith-profile-pic.jpg">
                 <p>Hi, I'm Lilith.  I originally got into coding through working on a website at the Environmental Consultancy I worked at.  I swiftly discovered I enjoyed it, and was given other interesting little projects and tools to build for the company, in various different languages and contexts such as Python for GIS, VBA for Excel, and SQL.</p>
                 <p>Since then, much has happened.  I spent quite a while as a full-time parent, during which I learned about, and got diagnosed with, ADHD.  The particular mix of ADHD and carrying the mental load of a family has led me to seek technological solutions to make daily life easier.  As I have grown increasingly frustrated with the lack of actually usable and useful tools, I decided to take matters into my own hands and make the damn things myself.</p>
                 <p>So watch this space.  Big things are coming!</p>
                 <p>I'm currently studying an intensive Full Stack Web Development "Coding Bootcamp" through the University of Birmingham.  The pages deployed on my github are coursework assignments for this. I am also self-employed as a Virtual Assistant, and have created the websites linked below for clients.</p>
             </article>
             <article>
-                <h2 id="#work">Work</h2>
+                <h2 id="work">Work</h2>
                 <div class="box">
-                    <a href="https://www.wrenmiller.art/" target=”_blank”><img src="assets/images/wrenmiller.art-screenshot.png" alt="Screenshot of WrenMiller.Art website showing the homepage, with a large image of a sculpture shaped like a wave, and filled with litter.  There is a menu bar across the top, and a social media icons and links to the right."></a>
-                    <a href="https://www.mythandmoon.com/" target=”_blank”><img src="assets/images/mythandmoon.com-screenshot.png" alt="Screenshot of landing page. Stars in the background, a large moon is centred with the silhouette of a dragon flying across it"></a>
-                    <a href="https://poisoned-eden.github.io/strong-dolphin-password-generator/" target=”_blank”><img src="assets/images/strong-dolphin-screenshot.png" alt="Screenshot of Strong Dolphin Password Generator"></a>
-                    <a href="https://poisoned-eden.github.io/prework-study-guide/" target=”_blank”><img src="assets/images/prework-study-guide-screenshot.png" alt=""></a>
-                    <a href="https://poisoned-eden.github.io/" target=”_blank”><img src="assets/images/portfolio-screenshot.png" alt="Screenshot of Lilith's portfolio page"></a>
+                    <a href="https://www.wrenmiller.art/" target=”_blank”>
+                        <figure>
+                            <img src="assets/images/wrenmiller.art-screenshot.png" alt="Screenshot of WrenMiller.Art website showing the homepage, with a large image of a sculpture shaped like a wave, and filled with litter.  There is a menu bar across the top, and a social media icons and links to the right.">
+                            <figcaption>
+                                <h3>wrenmiller.art</h3>
+                                WIX website builder
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.mythandmoon.com/" target=”_blank”>
+                        <figure>
+                            <img src="assets/images/mythandmoon.com-screenshot.png" alt="Screenshot of landing page. Stars in the background, a large moon is centred with the silhouette of a dragon flying across it">
+                            <figcaption>
+                                <h3>mythandmoon.com</h3>
+                                WIX website builder
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://poisoned-eden.github.io/strong-dolphin-password-generator/" target=”_blank”>
+                        <figure>
+                            <img src="assets/images/strong-dolphin-screenshot.png" alt="Screenshot of Strong Dolphin Password Generator">
+                            <figcaption>
+                                <h3>Strong Dolphin Password Generator</h3>
+                                JavaScript
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://poisoned-eden.github.io/prework-study-guide/" target=”_blank”>
+                        <figure>
+                            <img src="assets/images/prework-study-guide-screenshot.png" alt="">
+                            <figcaption>
+                                <h3>Prework Study Guide</h3>
+                                HTML, CSS & JavaScript
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://github.com/poisoned-eden/poisoned-eden.github.io/" target=”_blank”>
+                        <figure>
+                            <img src="assets/images/portfolio-screenshot.png" alt="Screenshot of Lilith's portfolio page">
+                            <figcaption>
+                                <h3>poisoned-eden Professional Portfolio</h3>
+                                HTML & CSS
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </article>
             <article>
-                <h2 id="#contact-me">Contact Me</h2>
+                <h2 id="contact-me">Contact Me</h2>
                 <address>
-                    <a href="mailto:poisoned.eden@gmail.com"><img src="assets/images/email-logo.png">poisoned.eden@gmail.com</a>
-                    <a href="tel:+447557911251"><img src="assets/images/phone-call.png">+44 7557 911 251</a>
-                    <a href="https://github.com/poisoned-eden"><img src="assets/images/github-mark.png">github.com/poisoned-eden</a>
+                    <div>
+                        <img src="assets/images/email-logo.png" >
+                        <a href="mailto:poisoned.eden@gmail.com">poisoned.eden@gmail.com</a>
+                    </div>
+                    
+                    <div>
+                        <img src="assets/images/phone-call.png" >
+                        <a href="tel:+447557911251">
+                            +44 7557 911 251
+                        </a>
+                    </div>
+                    <div>
+                        <img src="assets/images/github-mark.png">
+                        <a href="https://github.com/poisoed-eden">
+                            github.com/poisoned-eden
+                        </a>
+                    </div>
                 </address>
             </article>
             <article>
-                <h2 id="#cv">CV</h2>
-                <img src="assets/images/loading-pixels.gif" alt="A pixelated loading bar">
+                <h2 id="cv">CV</h2>
                 <p>My CV is being updated.  Want it as soon as it's ready?  Please hit the button to let me know, and I'll email it over ASAP.</p>
-                <a href="mailto:poisoned.eden@gmail.com?subject=CV%20Please"><button name="CV">I'm interested</button></a>
+                <div id="btn">
+                    <a href="mailto:poisoned.eden@gmail.com?subject=CV%20Please"><button name="CV">I'm interested</button></a>
+                </div>
             </article>
         </main>
         <footer>
