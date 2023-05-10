@@ -41,7 +41,7 @@ article {
     width: 100%;
 }
 
-article h2 {
+h2 {
     text-align: left;
     padding-left: 20px;
 }
@@ -119,7 +119,7 @@ button {
     border-width: 0;
 }
 
-h3 {
+footer {
     text-align: center;
     padding-top: 20px;
 }
@@ -131,4 +131,47 @@ h3 {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
+    article {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    .article-heading {
+        flex: 0 0 25%;
+    }
+
+    .article-heading h2 {
+        text-align: right;
+        padding-right: 20px;  
+    }
+
+    .content {
+        border-left: 5px;
+        border-color: var(--main-colour);
+        border-left-style: solid;
+        padding-left: 20px;
+        flex: 0 0 70%;
+    }
+
+    #work .content, #cv .content {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .full-width {
+        flex: 0 0 100%;
+    }
+
+    .half-width {
+        flex: 1 0 45%;
+    }
+
+    #cv .content > * {
+        flex-grow: 1;
+    }
+
 }
