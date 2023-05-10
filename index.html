@@ -33,18 +33,22 @@
             </nav>
         </header>
         <main>
-            <article>
-                <h2 id="about-me">About Me</h2>
-                <img src="assets/images/Lilith-profile-pic.jpg">
-                <p>Hi, I'm Lilith.  I originally got into coding through working on a website at the Environmental Consultancy I worked at.  I swiftly discovered I enjoyed it, and was given other interesting little projects and tools to build for the company, in various different languages and contexts such as Python for GIS, VBA for Excel, and SQL.</p>
-                <p>Since then, much has happened.  I spent quite a while as a full-time parent, during which I learned about, and got diagnosed with, ADHD.  The particular mix of ADHD and carrying the mental load of a family has led me to seek technological solutions to make daily life easier.  As I have grown increasingly frustrated with the lack of actually usable and useful tools, I decided to take matters into my own hands and make the damn things myself.</p>
-                <p>So watch this space.  Big things are coming!</p>
-                <p>I'm currently studying an intensive Full Stack Web Development "Coding Bootcamp" through the University of Birmingham.  The pages deployed on my github are coursework assignments for this. I am also self-employed as a Virtual Assistant, and have created the websites linked below for clients.</p>
+            <article id="about-me">
+                <div class="article-heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <p>Hi, I'm Lilith.  I originally got into coding through working on a website at the Environmental Consultancy I worked at.  I swiftly discovered I enjoyed it, and was given other interesting little projects and tools to build for the company, in various different languages and contexts such as Python for GIS, VBA for Excel, and SQL.</p>
+                    <img src="assets/images/Lilith-profile-pic.jpg">
+                    <p>Since then, much has happened.  I spent quite a while as a full-time parent, during which I learned about, and got diagnosed with, ADHD.  The particular mix of ADHD and carrying the mental load of a family has led me to seek technological solutions to make daily life easier.  As I have grown increasingly frustrated with the lack of actually usable and useful tools, I decided to take matters into my own hands and make the damn things myself.</p>
+                    <p>So watch this space.  Big things are coming!</p>
+                    <p>I'm currently studying an intensive Full Stack Web Development "Coding Bootcamp" through the University of Birmingham.  The pages deployed on my github are coursework assignments for this. I am also self-employed as a Virtual Assistant, and have created the websites linked below for clients.</p>
+                </div>
             </article>
-            <article>
-                <h2 id="work">Work</h2>
-                <div class="box">
-                    <a href="https://www.wrenmiller.art/" target=”_blank”>
+            <article  id="work">
+                <div class="article-heading"><h2>Work</h2></div >
+                <div class="content" >
+                    <a href="https://www.wrenmiller.art/" target=”_blank” class="full-width">
                         <figure>
                             <img src="assets/images/wrenmiller.art-screenshot.png" alt="Screenshot of WrenMiller.Art website showing the homepage, with a large image of a sculpture shaped like a wave, and filled with litter.  There is a menu bar across the top, and a social media icons and links to the right.">
                             <figcaption>
@@ -53,7 +57,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="https://www.mythandmoon.com/" target=”_blank”>
+                    <a href="https://www.mythandmoon.com/" target=”_blank” class="half-width">
                         <figure>
                             <img src="assets/images/mythandmoon.com-screenshot.png" alt="Screenshot of landing page. Stars in the background, a large moon is centred with the silhouette of a dragon flying across it">
                             <figcaption>
@@ -62,7 +66,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="https://poisoned-eden.github.io/strong-dolphin-password-generator/" target=”_blank”>
+                    <a href="https://poisoned-eden.github.io/strong-dolphin-password-generator/" target=”_blank” class="half-width">
                         <figure>
                             <img src="assets/images/strong-dolphin-screenshot.png" alt="Screenshot of Strong Dolphin Password Generator">
                             <figcaption>
@@ -71,7 +75,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="https://poisoned-eden.github.io/prework-study-guide/" target=”_blank”>
+                    <a href="https://poisoned-eden.github.io/prework-study-guide/" target=”_blank” class="half-width">
                         <figure>
                             <img src="assets/images/prework-study-guide-screenshot.png" alt="">
                             <figcaption>
@@ -80,7 +84,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="https://github.com/poisoned-eden/poisoned-eden.github.io/" target=”_blank”>
+                    <a href="https://github.com/poisoned-eden/poisoned-eden.github.io/" target=”_blank” class="half-width">
                         <figure>
                             <img src="assets/images/portfolio-screenshot.png" alt="Screenshot of Lilith's portfolio page">
                             <figcaption>
@@ -91,9 +95,9 @@
                     </a>
                 </div>
             </article>
-            <article>
-                <h2 id="contact-me">Contact Me</h2>
-                <address>
+            <article id="contact-me">
+                <div class="article-heading"><h2>Contact Me</h2></div>
+                <address class="content">
                     <div>
                         <img src="assets/images/email-logo.png" >
                         <a href="mailto:poisoned.eden@gmail.com">poisoned.eden@gmail.com</a>
@@ -113,11 +117,13 @@
                     </div>
                 </address>
             </article>
-            <article>
-                <h2 id="cv">CV</h2>
-                <p>My CV is being updated.  Want it as soon as it's ready?  Please hit the button to let me know, and I'll email it over ASAP.</p>
-                <div id="btn">
-                    <a href="mailto:poisoned.eden@gmail.com?subject=CV%20Please"><button name="CV">I'm interested</button></a>
+            <article id="cv">
+                <div class="article-heading"><h2>CV</h2></div>
+                <div class="content">
+                    <p>My CV is being updated.  Want it as soon as it's ready?  Please hit the button to let me know, and I'll email it over ASAP.</p>
+                    <div id="btn">
+                        <a href="mailto:poisoned.eden@gmail.com?subject=CV%20Please"><button name="CV">I'm interested</button></a>
+                    </div>
                 </div>
             </article>
         </main>
