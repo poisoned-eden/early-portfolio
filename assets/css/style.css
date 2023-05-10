@@ -88,35 +88,40 @@ address {
 }
 
 address div {
-    display: block;
-    background-repeat: no-repeat;
-}
-
-address img {
-    width: 100px;
-    padding: 10px 0;
-}
-
-address a {
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
     width: 100%;
+    padding-bottom: 10px;
     height: 100px;
-    
 }
 
-#email {
-    background-image: url("assets/images/email-logo.png");
+address div img {
+    height: 100px;
+    width: 100px;
 }
 
-#phone {
-    background-image: url("assets/images/phone-call.png");
+address div a {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    font-size: large;
 }
 
-#github {
-    background-image: url("assets/images/github-mark.png");
+#btn {
+    text-align: center;
+}
 
+button {
+    background-color: var(--main-colour);
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 20px;
+    font-weight: bold;
+    border-width: 0;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 20px;
 }
 
 @media screen and (min-width: 500px) {
